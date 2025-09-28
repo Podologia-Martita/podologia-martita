@@ -1,5 +1,1 @@
-import PanelProfesional from "./PanelProfesional.jsx";
-
-export default function App() {
-  return <PanelProfesional />;
-}
+import { useState } from 'react'\nimport Booking from './Booking.jsx'\nimport PanelProfesional from './PanelProfesional.jsx'\nimport { createClient } from '@supabase/supabase-js'\n\nconst supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_ANON_KEY)\n\nexport default function App() {\n  const [view, setView] = useState('booking') // 'booking' or 'panel'\n\n  return (\n    <div className="container">\n      <div className="header">\n        <h1>Podología Martita</h1>\n        <div>\n          <button onClick={() => setView('booking')}>Reservar cita</button>\n          <button onClick={() => setView('panel')} style={{ marginLeft:8 }}>Panel profesional</button>\n        </div>\n      </div>\n\n      {view === 'booking' && <Booking supabase={supabase} />}\n      {view === 'panel' && <PanelProfesional supabase={supabase} />}\n    </div>\n  )\n}\n

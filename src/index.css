@@ -1,4 +1,1 @@
-body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; }
-input, button { padding: 6px; border-radius: 4px; }
-button { cursor: pointer; background: #1976d2; color: white; border: none; }
-table th, table td { font-size: 14px; padding: 8px; }
+body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; color: #111; }\n.container { max-width: 900px; margin: 24px auto; padding: 16px; background: white; border-radius: 8px; }\n.header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }\nbutton { padding:8px 12px; border-radius:6px; border:none; background:#1976d2; color:white; cursor:pointer; }\ninput, select { padding:8px; border:1px solid #ccc; border-radius:6px; }\n.table { width:100%; border-collapse: collapse; }\n.table th, .table td { padding:8px; border-bottom:1px solid #eee; text-align:left; }\n.notice { background:#fff3cd; padding:8px; border-radius:6px; margin-top:12px; }\n
