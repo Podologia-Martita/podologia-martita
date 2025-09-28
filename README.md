@@ -4,13 +4,13 @@ Proyecto listo para desplegar en **Vercel** con base de datos en **Supabase**.
 
 ## 🚀 Pasos rápidos
 
-1. Sube este proyecto a GitHub.
-2. Entra a Vercel → Importa el repo → Configura variables de entorno:
+1. Subir este proyecto a GitHub.
+2. En Vercel → Importar repo → Configurar variables de entorno:
    - `VITE_SUPABASE_URL`
    - `VITE_SUPABASE_ANON_KEY`
 3. Deploy → listo!
 
-La tabla en Supabase se crea con este SQL:
+SQL para tabla de reservas en Supabase:
 
 ```sql
 create table bookings (
